@@ -14,8 +14,6 @@ public class SwingBat : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		fAngleOrig = transform.localEulerAngles.y;
-		//if( !isLeft )
-		//	print ("SwingBat Start - " + fAngleOrig);
 	}
 
 	// 화면 터치 판단 - 0: None / 1: Left / 2: Right

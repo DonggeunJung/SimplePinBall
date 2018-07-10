@@ -17,28 +17,8 @@ public class HitBall : MonoBehaviour {
 	}
 
 	void addVelocity(Vector3 contactPoint) {
-		//print ("addForce : " + contactPoint.ToString());
 		Vector3 direction = new Vector3 (-contactPoint.x, -contactPoint.y, -contactPoint.z);
 		Rigidbody r = this.GetComponent<Rigidbody> ();
 		r.AddForce (direction * r.mass * 350.0f);
-		//r.velocity
-	}
-
-	void OnTriggerEnter(Collider other) {
-		//print ("Triggered");
-		if (other.tag == BatTag1 || other.tag == BatTag2
-			|| other.tag == BatTag3) {
-			//print ("Triggered");
-		}
-	}
-
-	// Use this for initialization
-	void Start () {
-		//print ("Started");
-	}
-
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
